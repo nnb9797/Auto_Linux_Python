@@ -67,9 +67,6 @@ def test_step5(clear_folders, make_files, write_stat):
     assert all(res)
 
 
-# def test_step6():
-
-
 def test_step7(write_stat):
     assert ssh_checkout(data["host"], data["user"], data["passwd"],
                         "7z d {}/arx1.7z".format(data["folder_out"]), "Everything is Ok"), "Test1 Fail"
